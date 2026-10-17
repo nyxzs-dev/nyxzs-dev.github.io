@@ -3,7 +3,8 @@ const fallbackProfile = {
   role: "UI/UX & Scripter",
   email: "hipolice36@gmail.com",
   github: "https://github.com/yourusername",
-  summary: "What you ask, I deliver."
+  summary: "What you ask, I deliver.",
+  visits: "3M+"
 };
 
 function safeExternalUrl(value) {

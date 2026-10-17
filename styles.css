@@ -175,6 +175,19 @@ kbd { display: inline-grid; place-items: center; width: 21px; height: 19px; colo
 .welcome h1 { margin: 0; color: var(--accent-bright); font-size: clamp(32px, 4.4vw, 66px); font-weight: 400; letter-spacing: -.06em; }
 .welcome-copy > p:not(.system-line) { max-width: 650px; margin: 18px 0 0; color: var(--text); font-size: 14px; line-height: 1.8; }
 .welcome-copy .muted { color: var(--muted) !important; font-size: 12px !important; }
+.profile-metrics { display: flex; margin-top: 22px; }
+.metric-card {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 11px;
+  min-width: 150px;
+  padding: 12px 15px;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent);
+  box-shadow: inset 3px 0 var(--accent), 0 0 24px var(--accent-soft);
+}
+.metric-card strong { color: var(--accent-bright); font-size: 24px; font-weight: 500; letter-spacing: -.05em; }
+.metric-card span { color: var(--accent); font-size: 9px; letter-spacing: .13em; text-transform: uppercase; }
 .cursor-block { display: inline-block; width: .55em; height: .9em; margin-left: .15em; background: var(--accent); animation: blink 1s steps(1) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
 .inline-command { padding: 1px 5px; color: var(--accent); background: var(--accent-soft); border: 1px solid var(--line); cursor: pointer; }
