@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Roblox developer portfolio featuring Luau scripting, gameplay systems, UI, and Roblox Studio projects." />
+    <meta name="theme-color" content="#090c0a" />
+    <meta property="og:title" content="nyxzs.dev // Roblox Developer" />
+    <meta property="og:description" content="Roblox development, Luau scripting, UI, and gameplay systems." />
+    <meta property="og:type" content="website" />
+    <title>nyxzs.dev // Roblox Developer</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body data-theme="blue">
+    <a class="skip-link" href="#about-panel">Skip to portfolio</a>
+
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#about-panel" aria-label="Portfolio home">
+          <span class="brand-glyph">&gt;_</span>
+          <span>nyxzs.dev</span>
+        </a>
+        <div class="topbar-meta" aria-label="Portfolio status">
+          <span><i class="status-light"></i> AVAILABLE</span>
+          <span class="hide-small">ROBLOX_DEV</span>
+          <time data-clock>00:00:00</time>
+        </div>
+      </header>
+
+      <main class="terminal-panel">
+        <div class="tabbar" aria-hidden="true">
+          <div class="terminal-tab"><span>&gt;_</span> portfolio <i>×</i></div>
+          <button type="button" class="new-tab" tabindex="-1">+</button>
+        </div>
+
+        <section class="terminal" aria-label="Roblox developer portfolio">
+          <div class="terminal-history">
+            <div class="welcome output-block">
+              <pre class="ascii" aria-label="RBX monogram">██████╗ ██████╗ ██╗  ██╗
+██╔══██╗██╔══██╗╚██╗██╔╝
+██████╔╝██████╔╝ ╚███╔╝
+██╔══██╗██╔══██╗ ██╔██╗
+██║  ██║██████╔╝██╔╝ ██╗
+╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝</pre>
+              <div class="welcome-copy">
+                <p class="system-line">ROBLOX DEV PORTFOLIO <span>[READY]</span></p>
+                <h1><span data-profile="name">notnyxzs</span><span class="cursor-block" aria-hidden="true"></span></h1>
+                <p data-profile="summary">What you ask, I deliver.</p>
+                <p class="muted">Roblox development, Luau scripting, UI, and gameplay systems.</p>
+              </div>
+            </div>
+
+            <section class="portfolio-tabs" aria-label="Portfolio information">
+              <div class="public-tab-list" role="tablist" aria-label="Portfolio sections">
+                <button type="button" role="tab" aria-selected="true" aria-controls="about-panel" id="about-tab" class="is-active" data-public-tab="about"><span>01</span> About Me</button>
+                <button type="button" role="tab" aria-selected="false" aria-controls="work-panel" id="work-tab" data-public-tab="work"><span>02</span> What I Do</button>
+                <button type="button" role="tab" aria-selected="false" aria-controls="projects-panel" id="projects-tab" data-public-tab="projects"><span>03</span> Projects</button>
+                <button type="button" role="tab" aria-selected="false" aria-controls="contact-panel" id="contact-tab" data-public-tab="contact"><span>04</span> Contact</button>
+              </div>
+
+              <div class="public-tab-panel is-active" role="tabpanel" id="about-panel" aria-labelledby="about-tab" data-public-panel="about">
+                <p class="tab-kicker">PLAYER_PROFILE</p>
+                <h2>About Me</h2>
+                <p>I’m <strong data-profile="name">notnyxzs</strong>, a <span data-profile="role">UI/UX &amp; Scripter</span> creating experiences on Roblox.</p>
+                <p data-profile="summary">What you ask, I deliver.</p>
+              </div>
+
+              <div class="public-tab-panel" role="tabpanel" id="work-panel" aria-labelledby="work-tab" data-public-panel="work" hidden>
+                <p class="tab-kicker">SERVICES_MODULE</p>
+                <h2>What I Do</h2>
+                <div class="work-grid">
+                  <article><span>01</span><h3>Luau Scripting</h3><p>Clean, reusable scripts and modules built for Roblox Studio.</p></article>
+                  <article><span>02</span><h3>UI &amp; UX</h3><p>Responsive interfaces, menus, HUDs, animations, and player feedback.</p></article>
+                  <article><span>03</span><h3>Game Systems</h3><p>Gameplay mechanics, data systems, tools, and server-side logic.</p></article>
+                </div>
+              </div>
+
+              <div class="public-tab-panel" role="tabpanel" id="projects-panel" aria-labelledby="projects-tab" data-public-panel="projects" hidden>
+                <p class="tab-kicker">PROJECTS.JSON</p>
+                <h2>Projects</h2>
+                <div class="command-grid" data-project-list></div>
+              </div>
+
+              <div class="public-tab-panel" role="tabpanel" id="contact-panel" aria-labelledby="contact-tab" data-public-panel="contact" hidden>
+                <p class="tab-kicker">CONTACT.TXT</p>
+                <h2>Contact</h2>
+                <div class="command-grid contact-grid">
+                  <a class="command-card" data-profile-link="email"><strong>Email</strong><span data-profile="email">hipolice36@gmail.com</span></a>
+                  <a class="command-card" data-profile-link="github" target="_blank" rel="noreferrer"><strong>GitHub</strong><span>View profile</span></a>
+                  <a class="command-card" data-profile-link="linkedin" target="_blank" rel="noreferrer"><strong>LinkedIn</strong><span>View profile</span></a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+      </main>
+
+      <footer class="statusbar">
+        <div><span>⑂ main</span><span>✓ online</span></div>
+        <div><span>UTF-8</span><span>{ } Luau</span><span class="hide-small">⌁ Roblox development</span></div>
+      </footer>
+    </div>
+
+    <noscript>This portfolio requires JavaScript for its tabs.</noscript>
+  </body>
+</html>

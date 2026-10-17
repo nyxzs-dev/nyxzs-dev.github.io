@@ -1,0 +1,27 @@
+{
+  "profile": {
+    "name": "notnyxzs",
+    "role": "UI/UX & Scripter",
+    "email": "hipolice36@gmail.com",
+    "github": "https://github.com/yourusername",
+    "linkedin": "https://www.linkedin.com/in/yourusername",
+    "summary": "What you ask, I deliver.",
+    "projects": [
+      {
+        "title": "Combat Framework",
+        "description": "Responsive, server-authoritative combat with reusable weapons and abilities",
+        "stack": "Luau, RemoteEvents, raycasting"
+      },
+      {
+        "title": "Inventory & Data",
+        "description": "Persistent player inventories with safe server-side validation",
+        "stack": "Luau, DataStoreService, ModuleScripts"
+      },
+      {
+        "title": "Lobby & Match System",
+        "description": "Round flow, team assignment, map rotation, and polished game UI",
+        "stack": "Roblox Studio, Luau, TweenService"
+      }
+    ]
+  }
+}
