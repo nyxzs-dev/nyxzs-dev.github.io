@@ -4,7 +4,7 @@ Static Roblox developer portfolio prepared for GitHub Pages.
 
 ## Edit the website
 
-Edit `content.json` to change the name, role, contact links, summary, or projects. Commit the change on GitHub and GitHub Pages will publish it automatically.
+Edit `content.json` to change the name, role, contact links, or summary. Commit the change on GitHub and GitHub Pages will publish it automatically.
 
 ## Publish with GitHub Pages
 

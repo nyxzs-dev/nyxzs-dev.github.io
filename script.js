@@ -3,13 +3,7 @@ const fallbackProfile = {
   role: "UI/UX & Scripter",
   email: "hipolice36@gmail.com",
   github: "https://github.com/yourusername",
-  linkedin: "https://www.linkedin.com/in/yourusername",
-  summary: "What you ask, I deliver.",
-  projects: [
-    { title: "Combat Framework", description: "Responsive, server-authoritative combat with reusable weapons and abilities", stack: "Luau, RemoteEvents, raycasting" },
-    { title: "Inventory & Data", description: "Persistent player inventories with safe server-side validation", stack: "Luau, DataStoreService, ModuleScripts" },
-    { title: "Lobby & Match System", description: "Round flow, team assignment, map rotation, and polished game UI", stack: "Roblox Studio, Luau, TweenService" }
-  ]
+  summary: "What you ask, I deliver."
 };
 
 function safeExternalUrl(value) {
@@ -35,18 +29,6 @@ function applyProfile(profile) {
     else link.hidden = true;
   });
 
-  const projectList = document.querySelector("[data-project-list]");
-  projectList.replaceChildren();
-  profile.projects.forEach((project, index) => {
-    const card = document.createElement("article");
-    card.className = "command-card";
-    const title = document.createElement("strong");
-    title.textContent = `${String(index + 1).padStart(2, "0")} // ${project.title}`;
-    const description = document.createElement("span");
-    description.textContent = `${project.description} · ${project.stack}`;
-    card.append(title, description);
-    projectList.appendChild(card);
-  });
 }
 
 async function loadProfile() {
